@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}Pebble{% endblock %}</title>
+</head>
+<body>
+<div id="content">
+<p>
+<a href="home">Home</a>
+<a href="text">Text</a>
+<a href="property">Property</a>
+</p>
+{% block content %}{% endblock %}
+</div>
+<div id="footer">
+{% block footer %}
+<hr/>
+Copyright &copy;
+{% endblock %}
+</div>
+</body>
+</html>

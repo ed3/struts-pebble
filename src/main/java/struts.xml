@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 6.0//EN"
+	"https://struts.apache.org/dtds/struts-6.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value=","/>
+    <package name="default" extends="struts-default" namespace="/">
+        <result-types>
+            <result-type name="pebble" class="com.struts.pebble.PebbleResult" />
+        </result-types>
+        <default-action-ref name="home" />
+        <action name="home" class="net.action.HomeAction">
+            <result type="pebble">home</result>
+        </action>
+        <action name="text" class="net.action.TextAction">
+            <result type="pebble">text</result>
+        </action>
+        <action name="property" class="net.action.PropertyAction">
+            <result type="pebble">property</result>
+        </action>
+    </package>
+</struts>

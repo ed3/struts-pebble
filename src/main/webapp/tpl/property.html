@@ -1,0 +1,7 @@
+{% extends "base" %}
+{% block content %}
+<p>{{ name }}</p>
+{% for name in names %}
+{{ loop.index + 1 }}. {{ name }}<br/>
+{% endfor %}
+{% endblock %}
