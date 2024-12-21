@@ -6,10 +6,8 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-//import javax.servlet.ServletContext;
-//import javax.servlet.ServletResponse;
-import jakarta.servlet.ServletContext;
-import jakarta.servlet.ServletResponse;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletResponse;
 
 import org.apache.struts2.ActionContext;
 import org.apache.struts2.ActionInvocation;
