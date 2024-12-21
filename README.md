@@ -9,7 +9,7 @@ Requirement
 - java 11 or greater
 - struts-6.7.0 libraries
 - pebble-3.2.2.jar
-- if you use java 8 then need to change in `PebbleResult.java` file:
+- for java 8 need to change in `PebbleResult.java` file:
 
 ```java
 import jakarta.servlet.ServletContext;
@@ -21,6 +21,17 @@ to
 ```java
 import javax.servlet.ServletContext;
 import javax.servlet.ServletResponse;
+```
+- for struts 7 need to change in `PebbleResult.java` file:
+
+```java
+import com.opensymphony.xwork2.inject.Inject;
+```
+
+to
+
+```java
+import org.apache.struts2.inject.Inject;
 ```
 
 Dependency
