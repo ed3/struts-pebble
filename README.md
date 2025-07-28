@@ -8,7 +8,7 @@ Requirement
 
 - java 17 or greater (for older version use `java8` branch)
 - struts 7 libraries
-- pebble-3.2.2.jar
+- pebble-3.2.x.jar
 
 
 Dependency
