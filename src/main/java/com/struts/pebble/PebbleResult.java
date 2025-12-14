@@ -49,7 +49,7 @@ public class PebbleResult implements Result {
 	public Loader<?> pebbleLoader() {
 		ServletContext servletContext = (ServletContext) ActionContext.getContext().get(StrutsStatics.SERVLET_CONTEXT);
 		String path = servletContext.getRealPath("/");
-		FileLoader loader = new FileLoader();
+		FileLoader loader = new FileLoader(path);
 		loader.setCharset(this.charset);
 		loader.setPrefix(path + prefix);
 		loader.setSuffix(suffix);
@@ -82,3 +82,4 @@ public class PebbleResult implements Result {
 		response.getWriter().write(writer.toString());
 	}
 }
+
