@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>{% block title %}Pebble{% endblock %}</title>
 </head>
 <body>
-<div id="content">
 <p>
 <a href="home">Home</a>
 <a href="text">Text</a>
 <a href="property">Property</a>
 </p>
 {% block content %}{% endblock %}
-</div>
-<div id="footer">
 {% block footer %}
 <hr/>
-Copyright &copy;
+&copy; {{ now | date("yyyy") }}
 {% endblock %}
-</div>
 </body>
 </html>
