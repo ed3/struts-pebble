@@ -7,14 +7,14 @@ Requirement
 ---
 
 - java 17 or greater (for older version use `java8` branch)
-- struts 7 libraries
-- pebble 4.1.x.jar
+- [struts](https://struts.apache.org) 7 libraries
+- [pebble](https://pebbletemplates.io/) 4.1.x.jar
 
 
 Dependency
 ---
 
-- unbescape-1.1.6.RELEASE.jar
+- [unbescape](https://unbescape.org/) 1.1.6.RELEASE.jar
 
 
 Configuration
