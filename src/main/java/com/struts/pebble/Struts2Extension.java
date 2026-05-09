@@ -18,6 +18,13 @@ public class Struts2Extension extends AbstractExtension {
 	}
 
 	@Override
+    public Map<String, Object> getGlobalVariables() {
+        Map<String, Object> globals = new HashMap<>();
+        globals.put("now", new Date());
+        return globals;
+    }
+
+	@Override
 	public Map<String, Filter> getFilters() {
 		Map<String, Filter> filters = new HashMap<>();
 		return filters;
