@@ -7,7 +7,7 @@ Requirement
 ---
 
 - java 17 or greater (for older version use `java8` branch)
-- [struts](https://struts.apache.org) 7 libraries
+- [struts](https://struts.apache.org) 7.2.x libraries
 - [pebble](https://pebbletemplates.io/) 4.1.x.jar
 
 
